@@ -1,0 +1,82 @@
+<html>
+<head>
+    <title>Export HTML data to excel </title>
+    <h2>List of the users</h2>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script type="text/javascript" src="downloadFile.js"></script>
+    <style>
+        #tblStocks {
+          font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+
+        #tblStocks td, #tblStocks th {
+          border: 1px solid #ddd;
+          padding: 8px;
+        }
+
+        #tblStocks tr:nth-child(even){background-color: #f2f2f2;}
+
+        #tblStocks tr:hover {background-color: #ddd;}
+
+        #tblStocks th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #294c67;;
+            color: white;
+          }
+      </style>
+</head>
+<body>
+        <table id="tblStocks" cellpadding="0" cellspacing="0">
+            <tr>
+                <th>First name</th>
+                <th>Last name</th>
+                <th>Course</th>
+                <th>Gender</th>
+                <th>Phone no</th>
+                <th>E-Mail</th>
+              </tr>
+              <tr>
+                <td>Ram</td>
+                <td>k</td>
+                <td>cse</td>
+                <td>male</td>
+                <td>9876543210</td>
+<td>abd@gmail.com</td>
+              </tr>
+              <tr>
+                <td>Santhiya</td>
+                <td>G</td>
+                <td>eee</td>
+                <td>female</td>
+                <td>8765456789</td>
+<td>vgy@gmail.com</td>
+              </tr>
+              <tr>
+                <td>Poovizhi</td>
+                <td>KC</td>
+                <td>cse</td>
+                <td>female</td>
+                <td>7654321678</td>
+<td>poo@gmail.com</td>
+              </tr>
+
+              <tr>
+                <td>Ragavi</td>
+                <td>R</td>
+                <td>cse</td>
+                <td>female</td>
+                <td>7654321678</td>
+<td>rag@gmail.com</td>
+              </tr>
+        
+        </table>
+        <br />
+        <button onclick="exportData()">
+            <span class="glyphicon glyphicon-download"></span>
+            Download list</button>
+</body>
+</html>
