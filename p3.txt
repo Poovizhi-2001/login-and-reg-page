@@ -1,0 +1,179 @@
+<html>
+    <head>
+        <title>User Authetication</title>
+    </head>
+    <body>
+        <h1 style="text-align: center;">Welcome !</h1>
+        Name:<input type="text" name="Name"><br>
+        <br>
+        Password:<input type="text" name="Password"><br>
+        <br>
+        Log in:<input type="checkbox" name="log in"><br>
+        <br>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  
+        <button type="submit" ><a href="https://docs.google.com/spreadsheets/d/1BrWn63bk3yjzCSRzKimwN2swk4aklZeXPGWQ4EqG1-0/edit?usp=sharing">Submit</a></button>
+<button onclick="document.getElementById('id01').style.display='block'">Sign Up</button>
+
+<!-- The Modal -->
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'"
+class="close" title="Close Modal">&times;</span>
+
+  <!-- Modal Content -->
+<h1>Registration form</h1>
+
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="container">
+      <label for="fname"><b>first name</b></label>
+      <input type="text" placeholder="Enter first name" name="fname" required>
+
+      <label for="lname"><b>last name</b></label>
+      <input type="text" placeholder="Enter last name" name="lname" required>
+<label>   
+Course :  
+</label>   
+<select>  
+<option value="Course">Course</option>  
+<option value="BCA">BCA</option>  
+<option value="BBA">BBA</option>  
+<option value="B.Tech">B.Tech</option>  
+<option value="MBA">MBA</option>  
+<option value="MCA">MCA</option>  
+<option value="M.Tech">M.Tech</option>  
+</select>  
+  
+<br>  
+<br>  
+<label>   
+Gender :  
+</label><br>  
+<input type="radio" name="male"/> Male <br>  
+<input type="radio" name="female"/> Female <br>  
+<input type="radio" name="other"/> Other  
+<br>  
+<br>  
+  
+<label>   
+Phone :  
+</label>  
+<input type="text" name="country code"  value="+91" size="2"/>   
+<input type="text" name="phone" size="10"/> <br> <br>  
+Address  
+<br>  
+<textarea cols="80" rows="5" value="address">  
+</textarea>  
+<br> <br>  
+Email:  
+<input type="email" id="email" name="email"/> <br>    
+<br> <br>  
+Password:  
+<input type="Password" id="pass" name="pass"> <br>   
+<br> <br>  
+Re-type password:  
+<input type="Password" id="repass" name="repass"> <br> <br>  
+
+<button onclick="document.getElementById('id01').style.display='block'" >Sign Up</button>
+<!-- The Modal -->
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'"
+class="close" title="Close Modal">&times;</span>
+
+  <!-- Modal Content -->
+<head>
+    <title>Export HTML data to excel </title>
+    <h2>List of the users</h2>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script type="text/javascript" src="downloadFile.js"></script>
+    <style>
+        #tblStocks {
+          font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+
+        #tblStocks td, #tblStocks th {
+          border: 1px solid #ddd;
+          padding: 8px;
+        }
+
+        #tblStocks tr:nth-child(even){background-color: #f2f2f2;}
+
+        #tblStocks tr:hover {background-color: #ddd;}
+
+        #tblStocks th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #294c67;;
+            color: white;
+          }
+      </style>
+</head>
+<body>
+        <table id="tblStocks" cellpadding="0" cellspacing="0">
+            <tr>
+                <th>First name</th>
+                <th>Last name</th>
+                <th>Course</th>
+                <th>Gender</th>
+                <th>Phone no</th>
+                <th>E-Mail</th>
+              </tr>
+              <tr>
+                <td>Ram</td>
+                <td>k</td>
+                <td>cse</td>
+                <td>male</td>
+                <td>9876543210</td>
+<td>abd@gmail.com</td>
+              </tr>
+              <tr>
+                <td>Santhiya</td>
+                <td>G</td>
+                <td>eee</td>
+                <td>female</td>
+                <td>8765456789</td>
+<td>vgy@gmail.com</td>
+              </tr>
+              <tr>
+                <td>Poovizhi</td>
+                <td>KC</td>
+                <td>cse</td>
+                <td>female</td>
+                <td>7654321678</td>
+<td>poo@gmail.com</td>
+              </tr>
+
+              <tr>
+                <td>Ragavi</td>
+                <td>R</td>
+                <td>cse</td>
+                <td>female</td>
+                <td>7654321678</td>
+<td>rag@gmail.com</td>
+              </tr>
+        
+        </table>
+        <br />
+        <button onclick="exportData()">
+            <span class="glyphicon glyphicon-download"></span>
+            Download list</button>
+</body>
+
+
+   
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+  </form>
+</div>
+
+    </body>
+</html>
